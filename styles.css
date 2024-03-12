@@ -1,0 +1,75 @@
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+        body {
+            background-image: url('images/sfondo.gif');
+            font-family: "French Script MT", cursive;
+            margin: 0;
+            padding: 0;
+            font-size: 35px;/* dim testo nei box delle foto */
+        }
+        .container {
+            display: flex;
+            margin-top: 0px;/* Aggiungi del margine superiore */
+            margin-bottom: 100px;/* Aggiungi del margine inferiore */
+        }
+        .sidebar {
+            width: 120px;
+            margin-top: 200px;/* Aggiungi del margine superiore */
+            background-color: light gray;
+            padding: 20px;
+        }
+        .content {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 0px solid blue;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+            border: 1px solid gray;
+            overflow: hidden;
+        }
+        .box:nth-child(even) .image,
+        .box:nth-child(odd) .text {
+            order: 1; /* Inverti l'ordine per le righe pari */
+        }
+        .box:nth-child(even) .text,
+        .box:nth-child(odd) .image {
+            order: 2; /* Mantieni l'ordine per le righe dispari */
+        }
+        .image {
+            flex: 1f 1f;
+            padding: 0px;
+            margin: 0px;
+        }
+        .text {
+            flex: 1;
+            padding: 0px;
+            margin-left: 50px; /* Aggiungi un margine interno sinistro */
+}
+        }
+        .text h2 {
+            margin-top: 0;
+        }
+        .text p {
+            margin-bottom: 20;
+            
+        }
+       .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            padding: 0; /* Rimuovi il padding dall'immagine */
+        }
+        .sidebar a {
+            display: block;
+            margin-top: 30px; /* Aggiungi del margine superiore */
+            font-size: 35px; /* Imposta la dimensione del carattere per i link nella sidebar */
+        }
+    </style>
